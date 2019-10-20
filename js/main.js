@@ -11,7 +11,7 @@ $( function() {
     });
     $('.btn-toggle').on('click', function(bt) {
         bt.preventDefault();
-        $(this).parents('nav').addClass('isActive');
+        $(this).parents('.nav').addClass('isActive');
     })
 });
 
