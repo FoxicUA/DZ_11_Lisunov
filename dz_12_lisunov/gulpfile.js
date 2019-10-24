@@ -29,7 +29,7 @@ gulp.task('sass', function(){ // Создаем таск "sass"
     .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('run', gulp.parallel('sass'/*, 'browser-sync', 'watch'*/));
+gulp.task('run', gulp.parallel('sass', 'browser-sync', 'watch'));
 
 gulp.task('css-min', function() {
   return gulp.src('scss/main.scss') // Выбираем файл для минификации
